@@ -14,7 +14,7 @@
 .app-header nav{
   display: flex;
   flex-direction: row;
-  gap: 10px;
+  gap: 100px;
 }
 
 .app-header nav a{
@@ -24,12 +24,15 @@
 }
 
 
-
 .blogs-articles{
   display: flex;
   justify-content: center;
   padding:5px 50px;
   flex-direction:column;
+  background-color: white;
+  /* align-items: center; */
+  max-width: 1000px;
+  margin-inline: auto;
 }
 
 .blogs-articles h1{
@@ -41,4 +44,14 @@
   font-size: 1.5rem;
   display: block;
 
+}
+
+.intro{
+  line-height: 1.5rem;
+  font-size: 1.2rem;
+}
+
+.article-body{
+  column-count: 3;
+  column-gap: 20px;
 }
