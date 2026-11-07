@@ -1,15 +1,15 @@
+// Created function to reuse the same function for same comment with different username 
+function Comment({ username, children }) {
+    return (
+        <div className="comment">
+            <h3>{username}</h3>
+            <p>{children}</p>
+        </div>
+    )
+}
+
+
 const Comments = () => {
-
-    // Created function to reuse the same function for same comment with different username 
-    function Comment({ username, children }) {
-        return (
-            <div className="comment">
-                <h3>{username}</h3>
-                <p>{children}</p>
-            </div>
-        )
-    }
-
 
     return (
         <section className="comments-section">

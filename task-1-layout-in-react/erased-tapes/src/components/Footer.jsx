@@ -9,6 +9,7 @@ const Footer = () => {
             </nav>
 
             <p>
+                {/* To get the current year dynamically from javascript */}
                 &copy; {new Date().getFullYear()} Erased Disks Ltd
             </p>
 
