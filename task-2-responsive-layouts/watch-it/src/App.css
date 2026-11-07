@@ -1,0 +1,33 @@
+.app-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 16px;
+}
+
+.app-logo {
+  margin: 0;
+  font-size: 2em;
+}
+
+.genre-nav {
+  display: none;
+}
+
+@media (min-width: 720px) {
+  .app-logo {
+    font-size: 3em;
+  }
+
+  .genre-nav {
+    display: flex;
+    gap: 32px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .genre-nav {
+    gap: 48px;
+  }
+}
