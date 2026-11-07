@@ -114,3 +114,74 @@
   height: 50px;
   object-fit: contain;
 }
+
+.comments-section {
+  padding: 50px;
+  background-color: #f3eeee;
+  max-width: 1000px;
+  margin-inline: auto;
+}
+
+.comments-section h2 {
+  margin-top: 0;
+}
+
+.comment + .comment {
+  margin-top: 50px;
+}
+
+.comment h3 {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1rem;
+  margin: 0 0 10px;
+}
+
+.comment p {
+  margin: 0;
+  line-height: 1.5;
+  max-width: 65ch;
+}
+
+.app-footer {
+  background-color: #14181d;
+  color: white;
+  padding: 50px;
+  text-align: center;
+}
+
+.app-footer nav {
+  display: flex;
+  justify-content: space-around;
+  gap: 50px;
+}
+
+.app-footer a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.app-footer a:hover {
+  text-decoration: underline;
+}
+
+.app-footer a:focus-visible {
+  outline: 2px solid white;
+  outline-offset: 4px;
+}
+
+.app-footer p {
+  margin: 50px 0;
+}
+
+.footer-socials {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.footer-socials img {
+  display: block;
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
