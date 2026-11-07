@@ -1,5 +1,6 @@
 const Comments = () => {
 
+    // Created function to reuse the same function for same comment with different username 
     function Comment({ username, children }) {
         return (
             <div className="comment">

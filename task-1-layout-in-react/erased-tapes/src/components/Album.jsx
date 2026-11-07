@@ -1,5 +1,7 @@
 const Album = () => {
     return (
+
+        // One featured album and four other smaller cover image
         <section className="album-section">
             <img
                 className="featured-album"
