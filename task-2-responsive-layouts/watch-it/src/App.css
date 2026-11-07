@@ -15,6 +15,78 @@
   display: none;
 }
 
+.genre-nav a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.genre-nav a:hover {
+  text-decoration: underline;
+}
+
+button {
+  padding: 16px;
+  border: none;
+  border-radius: 16px;
+  background-color: #eef36a;
+  color: #070410;
+  font-size: 2em;
+  line-height: 1;
+  cursor: pointer;
+}
+
+a:focus-visible,
+button:focus-visible {
+  outline: 3px solid #4dccbd;
+  outline-offset: 4px;
+}
+
+
+
+/* styling mmobile layout */
+main {
+  max-width: 900px;
+  margin-inline: auto;
+  padding-block: 16px;
+}
+
+.movie-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
+.movie-card {
+  min-width: 0;
+  background-color: #070410;
+  font-size: 1.5em;
+  box-shadow: 6px 6px 0 #4dccbd;
+}
+
+.movie-card > img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+}
+
+.movie-card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 16px;
+}
+
+.movie-card-content p {
+  margin: 0;
+  line-height: 1.5;
+}
+
+.movie-card-content button {
+  width: 100%;
+}
+
+
 @media (min-width: 720px) {
   .app-logo {
     font-size: 3em;
@@ -24,10 +96,67 @@
     display: flex;
     gap: 32px;
   }
+
+  main {
+  padding: 32px;
+}
+
+.movie-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 32px;
+}
+
+.movie-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.movie-card-content {
+  flex: 1;
+}
+
+.movie-card-content button {
+  margin-top: auto;
+}
 }
 
 @media (min-width: 1024px) {
   .genre-nav {
     gap: 48px;
   }
+
+
+  main {
+  padding: 48px 0;
+}
+
+.movie-grid {
+  gap: 48px;
+}
+
+/* First movie spans both columns. */
+.movie-card:first-child {
+  grid-column: 1 / -1;
+}
+
+.movie-card:first-child > img {
+  aspect-ratio: 3 / 1;
+}
+
+.movie-card:first-child .movie-card-content {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  align-items: stretch;
+}
+
+.movie-card:first-child button {
+  margin-top: 0;
+}
+
+/* Final three movies use an image beside their content. */
+.movie-card:nth-child(n + 4) {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
 }

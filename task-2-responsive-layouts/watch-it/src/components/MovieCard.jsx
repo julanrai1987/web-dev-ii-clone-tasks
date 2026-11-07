@@ -1,6 +1,16 @@
-const MovieCard = () => {
+const MovieCard = ({movie}) => {
     return (
-       <div className="movie-grid">Movies will appear here.</div>
+        <article className="movie-card">
+            <img src={movie.image} alt={`${movie.title} poster`} />
+
+            <div className="movie-card-content">
+                <p>{movie.description}</p>
+
+                <button type="button" aria-label={`Watch ${movie.title}`}>
+                    WATCH NOW
+                </button>
+            </div>
+        </article>
     )
 }
 
