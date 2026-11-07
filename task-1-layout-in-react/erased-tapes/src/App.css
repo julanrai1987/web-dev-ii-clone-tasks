@@ -75,3 +75,42 @@
   grid-column: span 2;
   grid-row: span 2;
 }
+
+.author-section {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  padding: 50px;
+  background-color: white;
+  max-width: 1000px;
+  margin-inline: auto;
+}
+
+.author-intro {
+  flex: 1;
+}
+
+.author-intro h2 {
+  text-align: center;
+}
+
+.author-image {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.author-socials {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.author-socials img {
+  display: block;
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
