@@ -4,8 +4,8 @@ function App() {
 
   return (
       <main>
-        <header>
-           <img src={"/logo.svg"} className="logo" alt="Vite logo" />
+        <header className="app-header">
+           <img src={"/logo.svg"} className="logo" alt="Erased Tapes" />
 
            <nav>
              <a href="">Our Blog </a>
